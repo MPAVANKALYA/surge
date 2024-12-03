@@ -1,0 +1,23 @@
+
+<h1>hello hi</h1>
+
+<sly data-sly-use.model="com.adobe.aem.demo.core.models.DialogModel">
+
+    <div>
+        <p>Textfield:${model.Textfield}</p>
+    </div>
+
+
+<div>File: <img src="${model.fileReference}" alt="Image description"></div>
+
+
+
+
+    <div>Switch:${model.check ? 'on' : 'off'} </div>
+
+
+    <div>
+        <p>Dropdown Selection:${model.select}</p>
+    </div>
+
+</sly>
