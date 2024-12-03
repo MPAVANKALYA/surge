@@ -1,0 +1,28 @@
+<h1>hello Pavan</h1>
+<sly data-sly-use.d="com.adobe.aem.demo.core.models.Task3">
+<p>Logo:${d.text1}</p>
+<p>LogomobileImage:${d.image1}</p>
+<p>Logolink:${d.image2}</p>
+<p>Switch:${d.checkbox?'Yes':'No'}</p>
+<p>Select:${d.select}</p>
+</sly>
+
+
+<sly data-sly-list.m="${d.mul}">
+<h1>tab2</h1>
+<p>Text:${m.text2}</p>
+<p>patchfeild:${m.image3}</p>
+</sly>
+
+
+<sly data-sly-list.n="${d.mul1}">
+<h1>tab3</h1>
+<p>desktopicon:${n.image4}</p>
+<p>mobileicon: ${n.image5}</p>
+
+<sly data-sly-list.k="${n.nested}">
+<p>patchfeild:${k.image6}</p>
+</sly>
+
+
+
