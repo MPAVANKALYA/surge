@@ -1,0 +1,27 @@
+<h1>Hello Hi</h1>
+
+<sly data-sly-use.model="com.adobe.aem.demo.core.models.Task2">
+    <div>
+        <p>Textfield: ${model.text}</p>
+    </div>
+</sly>
+
+  <h2>Multi</h2>
+<sly data-sly-list.item="${model.mul}">
+ <div> 
+   <div>Name:${item.text1}</div>
+    <div>Image: ${item.image}</div>
+     <div>Country:${item.country}</div>
+      <div>Switch:${item.checkbox ? 'on' : 'off'}</div>
+
+</div>
+</sly>
+
+
+<sly data-sly-list.nested="${item.nested}">
+
+    <div>
+        <p>Rich Text: ${nested.text2}</p>
+    </div>
+</sly>
+
